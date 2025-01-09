@@ -495,6 +495,9 @@ a:hover{
     .containers-area{
         width: 100%;
     }
+    .containers-area hr{
+        display: none;
+    }
 }
 @media screen and (max-width: 375px) {
    
@@ -503,6 +506,9 @@ a:hover{
     }
     .containers-area{
         width: 100%;
+    }
+    .containers-area hr{
+        display: none;
     }
 }
 @media screen and (max-width: 320px) {
