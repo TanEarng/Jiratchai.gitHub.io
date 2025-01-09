@@ -625,3 +625,12 @@ a:hover{
         width: 100%;
     }
 }
+@media screen and (max-width: 320px) {
+   
+    .footer_container {
+        width: 375px;
+    }
+    .containers-area{
+        width: 100%;
+    }
+}
