@@ -226,7 +226,7 @@ nav{
 .service{
     width: 100%;
     animation: autoShow both;
-    animation-timeline: view(60% 10%);
+    animation-timeline: view(90% 5%);
     
 }
 
@@ -287,7 +287,13 @@ nav{
     }
 }
 @media screen and (max-width:425px){
-    .service-card{
+    
+    .service{
+        
+        animation: autoShow both;
+        animation-timeline: view(240% 5%);
+        
+    }.service-card{
         display: flex;
         flex-wrap: wrap;
         
@@ -333,7 +339,7 @@ nav{
     filter: grayscale(100%);
     transition: transform  1.0s;
     animation: autoShow both;
-    animation-timeline: view(60% 10%);
+    animation-timeline: view(95% 10%);
 }
 .Why-us-card-img img:hover{
     filter: grayscale(0);
@@ -347,7 +353,7 @@ nav{
     width: 47%;
     color: white;
     animation: autoShow both;
-    animation-timeline: view(60% 10%);
+    animation-timeline: view(95% 10%);
 }
 
 .Why-us-card h2{
@@ -427,7 +433,7 @@ nav{
     margin: 1rem auto;
     background-color: #ffffff;
     animation: autoShow both;
-    animation-timeline: view(80% 10%);
+    animation-timeline: view(95% 10%);
 }
 .product{
     display: flex;
@@ -487,7 +493,7 @@ nav{
     align-items: center;
     margin: 1rem auto;
     animation: autoShow both;
-    animation-timeline: view(80% 10%);
+    animation-timeline: view(95% 10%);
 }
 .grid-team{
     display: flex;
@@ -634,7 +640,7 @@ color: #ff8a00;
     color: rgb(43, 41, 41);
     transition: transform  1.0s;
     animation: autoShow both;
-    animation-timeline: view(80% 10%);
+    animation-timeline: view(95% 10%);
 }
 .form-wrap:hover{
     filter: grayscale(0);
@@ -837,6 +843,15 @@ a:hover{
     .containers-area{
         width: 100%;
     }
+    @keyframes autoShow{
+        from{
+            opacity: 0;
+            transform: translateY(50px)scale(0.3);
+        }to{
+            opacity: 1;
+            transform: translateY(0)scale(1);
+        }
+    }
 }
 @media screen and (max-width: 375px) {
    
@@ -855,8 +870,11 @@ a:hover{
     }
     .containers-area{
         width: 100%;
+
     } 
-    
+    .containers-area hr{
+        display: none;
+    }
     
     
 }
