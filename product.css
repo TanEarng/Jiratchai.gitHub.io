@@ -525,7 +525,7 @@ a:hover{
 @media screen and (max-width: 320px) {
    
     .footer_container {
-        width: 375px;
+        width: 320px;
     }
     .containers-area{
         width: 100%;
